@@ -27,9 +27,11 @@ body {
 }
 
 .contenedor img {
-    width: 500px;
     border-radius: 10px;
     transition: transform 0.3s;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 }
 
 .contenedor img:hover {
@@ -145,7 +147,36 @@ table, th, td {
     -webkit-text-stroke: 2px #ccd6f6;
 }
 
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .intro {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        padding: 10px;
+        border-right: none;
+        border-bottom: 1px solid #0a192f;
+    }
+}
+
+table {
+    display: block;
+    overflow-x: auto;
+}
 
 </style>
 
